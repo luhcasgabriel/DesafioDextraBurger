@@ -23,7 +23,11 @@
    * [Descrição da solução](#Descrição-da-solução)
    * [Testes](#Plano-de-testes)
       
-
+### Frontend
+* [Instalação](#Instalação)
+   * [Pré requisitos](#Pré-requisitos)
+   * [Execução](#Execução)
+   * [Descrição da solução](#Descrição-da-solução)
 
 
 
@@ -54,6 +58,7 @@ Acesse a pasta Backend dentro do projeto raiz, nela está contida a aplicação 
 
 <br/>
 Acesse a pasta Backend para executar a aplicação
+
 ```bash
 cd ./Backend
 ```
@@ -61,11 +66,13 @@ cd ./Backend
 Execute a instalação das dependêcias:
 
 Se você utiliza npm:
+
 ```bash
 npm install
 ```
 <br/>
 Se você utiliza yarn:
+
 ```bash
 yarn install
 ```
@@ -74,11 +81,13 @@ yarn install
 Após instalar as dependências, é necessário rodar as migrations para que o typeorm crie as tabelas e insira os dados informados nas seeders
 
 Se você utiliza npm:
+
 ```bash
 npm run typeorm migration:run
 ```
 <br/>
 Se você utiliza yarn:
+
 ```bash
 yarn typeorm migration:run
 ```
@@ -86,11 +95,13 @@ yarn typeorm migration:run
 Após rodar as migrations, executar a aplicação rode o seguinte comando
 
 Se você utiliza npm:
+
 ```bash
 npm run dev
 ```
 <br/>
 Se você utiliza yarn:
+
 ```bash
 yarn dev
 ```
@@ -131,12 +142,14 @@ Execute o comando para rodar os testes unitários e testes integrados
 É aconcelhavel reverter e rodar as migrations antes dos testes
 
 Se você utiliza npm:
+
 ```bash
 npm run typeorm migration:revert
 npm run typeorm migration:run
 ```
 <br/>
 Se você utiliza yarn:
+
 ```bash
 yarn typeorm migration:revert
 yarn typeorm migration:run
@@ -145,11 +158,13 @@ yarn typeorm migration:run
 Após rode os testes
 
 Se você utiliza npm:
+
 ```bash
 npm run test
 ```
 <br/>
 Se você utiliza yarn:
+
 ```bash
 yarn test
 ```
@@ -158,4 +173,73 @@ yarn test
 <br/>
 
 ------------------
+
+
+## Frontend
+br/>
+## Instalação
+
+Baixe o repositório por linha de comando ou fazendo descompactação , dentro da pasta Frontend contem a aplicação front end  <br/>
+Acesse a pasta Backend dentro do projeto raiz, nela está contida a aplicação de front-end
+É necessário que se tenha o node ou yarn instalado.
+
+
+<br/>
+
+<br/>
+<br/>
+
+## Pré requisitos 
+
+É necessário que se tenha o node ou yarn instalado
+
+<br/>
+<br/>
+
+## Execução
+
+<br/>
+Acesse a pasta Frontend para executar a aplicação
+
+```bash
+cd ./Frontend
+```
+<br/>
+Execute a instalação das dependêcias:
+
+Se você utiliza npm:
+
+```bash
+npm install
+```
+<br/>
+Se você utiliza yarn:
+
+```bash
+yarn install
+```
+<br/>
+
+Execute a aplicação react
+
+Se você utiliza npm:
+
+```bash
+npm run start
+```
+<br/>
+Se você utiliza yarn:
+
+```bash
+yarn start
+```
+
+<br/>
+<br/>
+
+## Descrição da solução
+
+Aplicação em React
+<br/>
+consumo de api com axios
 
