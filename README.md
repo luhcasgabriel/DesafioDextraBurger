@@ -65,11 +65,13 @@ cd ./Backend
 Execute a instalação das dependêcias:
 
 Se você utiliza npm:
+
 ```bash
 npm install
 ```
 <br/>
 Se você utiliza yarn:
+
 ```bash
 yarn install
 ```
@@ -78,11 +80,13 @@ yarn install
 Após instalar as dependências, é necessário rodar as migrations para que o typeorm crie as tabelas e insira os dados informados nas seeders
 
 Se você utiliza npm:
+
 ```bash
 npm run typeorm migration:run
 ```
 <br/>
 Se você utiliza yarn:
+
 ```bash
 yarn typeorm migration:run
 ```
@@ -90,11 +94,13 @@ yarn typeorm migration:run
 Após rodar as migrations, executar a aplicação rode o seguinte comando
 
 Se você utiliza npm:
+
 ```bash
 npm run dev
 ```
 <br/>
 Se você utiliza yarn:
+
 ```bash
 yarn dev
 ```
