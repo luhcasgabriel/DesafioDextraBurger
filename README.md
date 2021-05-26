@@ -58,6 +58,7 @@ Acesse a pasta Backend dentro do projeto raiz, nela está contida a aplicação 
 
 <br/>
 Acesse a pasta Backend para executar a aplicação
+
 ```bash
 cd ./Backend
 ```
@@ -141,12 +142,14 @@ Execute o comando para rodar os testes unitários e testes integrados
 É aconcelhavel reverter e rodar as migrations antes dos testes
 
 Se você utiliza npm:
+
 ```bash
 npm run typeorm migration:revert
 npm run typeorm migration:run
 ```
 <br/>
 Se você utiliza yarn:
+
 ```bash
 yarn typeorm migration:revert
 yarn typeorm migration:run
@@ -155,11 +158,13 @@ yarn typeorm migration:run
 Após rode os testes
 
 Se você utiliza npm:
+
 ```bash
 npm run test
 ```
 <br/>
 Se você utiliza yarn:
+
 ```bash
 yarn test
 ```
@@ -195,6 +200,7 @@ Acesse a pasta Backend dentro do projeto raiz, nela está contida a aplicação 
 
 <br/>
 Acesse a pasta Frontend para executar a aplicação
+
 ```bash
 cd ./Frontend
 ```
@@ -202,11 +208,13 @@ cd ./Frontend
 Execute a instalação das dependêcias:
 
 Se você utiliza npm:
+
 ```bash
 npm install
 ```
 <br/>
 Se você utiliza yarn:
+
 ```bash
 yarn install
 ```
@@ -215,11 +223,13 @@ yarn install
 Execute a aplicação react
 
 Se você utiliza npm:
+
 ```bash
 npm run start
 ```
 <br/>
 Se você utiliza yarn:
+
 ```bash
 yarn start
 ```
