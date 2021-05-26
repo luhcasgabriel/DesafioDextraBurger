@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "3e2b5ca9-655e-40be-ac09-3eb16b1b39d6",
+		"name": "Dextra Burger desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Items",
+			"item": [
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/items",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/items?=salame",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"items"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "salame"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Queijo\",\r\n    \"price\": 1.50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/items",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"items"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Menu",
+			"item": [
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/menu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/menu/?name=X-Bacon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"menu",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "X-Bacon"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"X-lombada\",\r\n    \"items\": [\r\n        {\r\n            \"id\": \"10287eb6-d6d4-4035-95cf-7365b830b9a7\",\r\n            \"name\": \"Hambúrguer de carne\",\r\n            \"price\": 3.0\r\n        },\r\n        {\r\n            \"id\": \"4f4e166a-339e-42fe-af5c-1ba1860b9be8\",\r\n            \"name\": \"Queijo\",\r\n            \"price\": 1.5\r\n        },\r\n        {\r\n            \"id\": \"36ece12a-91e2-4e5c-b83b-478f2ddd6453\",\r\n            \"name\": \"Ovo\",\r\n            \"price\": 0.8\r\n        },\r\n        {\r\n            \"id\": \"db911c5b-26e3-4f31-9c7e-2d800eb58ed3\",\r\n            \"name\": \"Bacon\",\r\n            \"price\": 2.0\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/menu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"menu"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientName\": \"bot1 boot\",\r\n    \"orderNumber\": 5,\r\n    \"price\": 0,\r\n    \"discount\": 0,\r\n    \"menu\": [\r\n        {\r\n            \"id\": \"744fc79a-03b0-4e74-b7a4-b5155069f4c5\",\r\n            \"items\": [\r\n                {\r\n                    \"id\": \"36ece12a-91e2-4e5c-b83b-478f2ddd6453\",\r\n                    \"quantity\": 1,\r\n                    \"name\": \"Ovo\",\r\n                    \"price\": 0.8\r\n                },\r\n                {\r\n                    \"id\": \"db911c5b-26e3-4f31-9c7e-2d800eb58ed3\",\r\n                    \"quantity\": 1,\r\n                    \"name\": \"Bacon\",\r\n                    \"price\": 2\r\n                },\r\n                {\r\n                    \"id\": \"10287eb6-d6d4-4035-95cf-7365b830b9a7\",\r\n                    \"quantity\": 1,\r\n                    \"name\": \"Hambúrguer de carne\",\r\n                    \"price\": 3\r\n                },\r\n                {\r\n                    \"id\": \"10287eb6-d6d4-4035-95cf-7365b830b9a7\",\r\n                    \"quantity\": 1,\r\n                    \"name\": \"Hambúrguer de carne\",\r\n                    \"price\": 3\r\n                },\r\n                {\r\n                    \"id\": \"10287eb6-d6d4-4035-95cf-7365b830b9a7\",\r\n                    \"quantity\": 1,\r\n                    \"name\": \"Hambúrguer de carne\",\r\n                    \"price\": 3\r\n                },\r\n                {\r\n                    \"id\": \"10287eb6-d6d4-4035-95cf-7365b830b9a7\",\r\n                    \"quantity\": 1,\r\n                    \"name\": \"Hambúrguer de carne\",\r\n                    \"price\": 3\r\n                },\r\n                {\r\n                    \"id\": \"10287eb6-d6d4-4035-95cf-7365b830b9a7\",\r\n                    \"quantity\": 1,\r\n                    \"name\": \"Hambúrguer de carne\",\r\n                    \"price\": 3\r\n                },\r\n                {\r\n                    \"id\": \"10287eb6-d6d4-4035-95cf-7365b830b9a7\",\r\n                    \"quantity\": 1,\r\n                    \"name\": \"Hambúrguer de carne\",\r\n                    \"price\": 3\r\n                },\r\n                {\r\n                    \"id\": \"4f4e166a-339e-42fe-af5c-1ba1860b9be8\",\r\n                    \"quantity\": 1,\r\n                    \"name\": \"Queijo\",\r\n                    \"price\": 1.5\r\n                }\r\n            ]\r\n        }        \r\n    ]     \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/menu\n",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"menu\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/menu/?name=X-Bacon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"menu",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "X-Bacon"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
