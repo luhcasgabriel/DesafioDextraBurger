@@ -1,5 +1,5 @@
 
-<h1 align="center">Desafio Dextra - Projeto Hamburgueria</h1>
+<h1 align="center">Projeto Hamburgueria</h1>
 
 <p align="center">🚀 Desenvolvimento de aplicação para uma startup do ramo alimenticio, foi criado uma aplicação back-end em nodeJs utilizando typescript com TypeOrm, persistência de dados no sqlitefunção, padrões restFull e utilização de TDD(Test-driven development) utilizando boas práticas de estruturação, e a criação de uma aplicação front-end em reactJs para consumo da Api</p>
 
